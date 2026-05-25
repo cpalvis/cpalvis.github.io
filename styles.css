@@ -1,0 +1,37 @@
+/* 1. Give the links a bit more padding so they look and feel like buttons */
+.animated-navbar .nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important; /* Adds button-like spacing */
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.3s ease;
+}
+
+/* Change text color to full white on hover */
+.animated-navbar .nav-link:hover {
+  color: #fff;
+}
+
+/* 2. Create the hidden underline using a pseudo-element */
+.animated-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Thickness of your underline button border */
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd; /* Bootstrap primary blue (or use your own hex code) */
+  transition: width 0.3s ease; /* This handles the smooth "appearing" animation */
+}
+
+/* 3. When hovered, animate the underline to full width */
+.animated-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* 4. Ensure the currently 'active' page link always displays the underline */
+.animated-navbar .nav-link.active::after {
+  width: 100%;
+}
+.animated-navbar .nav-link.active {
+  color: #fff;
+}
