@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
   height: 90px;
+  border: none;
 }
 
 .top-banner {
@@ -80,11 +81,15 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 20px;
+  padding-bottom: 0;
+  padding-top: 0;
   width: 100%;
   background-color: black;
   height: 100%;
   text-decoration: none;
   justify-content: flex-start;
+  margin: 0;
+  border: none;
 }
 
 .navbar a {
@@ -98,11 +103,12 @@
   color: white;
   border: none;
   height: 100%;
-  margin-top: none;
-  margin-bottom: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 30px;
   padding-right: 30px;
   text-decoration: none;
+  transition: background 03.s ease;
 
   &:hover {
     background-color: rgba(94, 94, 94, 0.53);
