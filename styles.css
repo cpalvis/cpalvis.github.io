@@ -114,3 +114,13 @@
     background-color: rgba(94, 94, 94, 0.53);
   }
 }
+
+.home-img {
+  height: 90%;
+  width: 100%;
+  transition: height 0.5s ease-out;
+
+  &:hover {
+    height: 100%;
+  }
+}
