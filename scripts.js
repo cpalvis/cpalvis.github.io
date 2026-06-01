@@ -6,12 +6,4 @@ function loadMenu(){
     document.body.insertBefore(menuFrame, document.body.firstChild);
 }
 
-
-
 window.onload = loadMenu()
-
-
-const resNavButton = document.getElementById('nav-res-btn');
-resNavButton.addEventListener("click", () => {
-    window.location.href = "resume.html";
-});
