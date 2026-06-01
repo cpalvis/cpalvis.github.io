@@ -5,9 +5,17 @@
 <link href="styles.css" rel="stylesheet"> 
 
 <nav class="navbar">
+  <a href="index.html"><img src="assets/init white.png" class="home-img"></a>
 
   <a href="index.html"><button class="nav-btn">Home</button></a>
   <a href="about.html"><button class="nav-btn">About</button></a>
   <a href="assets/resume.pdf" target="_top"><button class="nav-btn">Resume</button></a>
   <a href="contact.html"><button class="nav-btn">Contact</button></a>
 </nav>
+
+<script>
+  const links = document.querySelectorAll('a');
+  links.forEach((link) => {
+    link.setAttribute("target", "_top");
+  })
+</script>
