@@ -113,7 +113,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   text-decoration: none;
-  transition: background 03.s ease;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: rgba(94, 94, 94, 0.53);
