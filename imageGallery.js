@@ -24,10 +24,6 @@ function stopAutoScroll() {
 // Start the timer on page load
 startAutoScroll();
 
-// Smart UX Feature: Pause scrolling when user hovers their mouse over the gallery
-gallery.addEventListener('mouseenter', stopAutoScroll);
-gallery.addEventListener('mouseleave', startAutoScroll);
-
 // Smart UX Feature: Pause scrolling if a mobile user touches/swipes manually
 gallery.addEventListener('touchstart', stopAutoScroll);
 gallery.addEventListener('touchend', startAutoScroll);
