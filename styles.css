@@ -15,7 +15,8 @@ body {
   margin: 0;
   height: 90px;
   border: none;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
