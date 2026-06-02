@@ -165,3 +165,25 @@ body {
   object-fit: contain;
   z-index: 2;            /* Ensures it sits safely on top of the absolute blur image */
 }
+
+.links-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.btns {
+  margin: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: rgba(94, 94, 94, 0.53);
+  }
+}
