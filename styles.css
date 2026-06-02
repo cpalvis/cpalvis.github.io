@@ -5,7 +5,7 @@ body {
 
 .banner {
   display: flex;
-  background-color:#2C5EAD;
+  background-color: black;
   color: white;
   z-index: 100;
 }
@@ -19,16 +19,19 @@ body {
   border: none;
 }
 
-.top-banner {
+.home-banner {
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 400px;
   z-index: 1000;
   color: white;
+  background-image: url(assets/play/mp1.jpg);
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
 }
 
 .bottom-banner {
-  position: fixed;
   bottom: 0;
   width: 100%;
   justify-content: center;
@@ -129,4 +132,16 @@ body {
   &:hover {
     height: 100%;
   }
+}
+
+.img-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.img-scroll img {
+  height: 500px;
 }
