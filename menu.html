@@ -4,21 +4,18 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet"> 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark animated-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">BrandLogo</a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#animatedNav" aria-controls="animatedNav" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar">
+  <a href="index.html" class="home-img-link"><img src="assets/init white.png" class="home-img"></a>
 
-    <div class="collapse navbar-collapse" id="animatedNav">
-      <div class="navbar-nav ms-auto gap-3">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </div>
-    </div>
-  </div>
+  <a href="index.html"><button class="nav-btn">Home</button></a>
+  <a href="about.html"><button class="nav-btn">About</button></a>
+  <a href="assets/resume.pdf" target="_top"><button class="nav-btn">Resume</button></a>
+  <a href="mailto:alvis.patrick@yahoo.com?subject=[Website%20Inquiry]%20-%20Your%20Subject%20Here"><button class="nav-btn">Contact</button></a>
 </nav>
+
+<script>
+  const links = document.querySelectorAll('a');
+  links.forEach((link) => {
+    link.setAttribute("target", "_top");
+  })
+</script>

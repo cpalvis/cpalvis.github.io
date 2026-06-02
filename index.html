@@ -13,16 +13,41 @@
     <link rel="icon" href="assets/init.png">
 </head>
 <body>
-    <div class="banner top-banner">
-        <h1>Welcome to my webpage!</h1>
+
+<div id="autoGallery" class="gallery-frame overflow-auto mx-auto w-100">
+  <div class="d-flex h-100">
+    
+    <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <img src="assets/play/mp1.jpg" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 1">
     </div>
-    <div class="main-content">
-        <img title="Colin Alvis" class="pfp" src="assets/school-profile.jpg" alt="Colin P. Alvis">
-        <p class="main-content-text">Hello there!<br> This is my personal website, which will host a resume, contact info, and much more. Right now it's just a landing page, but more is on its way!<br>See you soon,</p>
-        <img class="sig" src="assets/sig-2.png">
+
+    <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <img src="assets/Colin_Cropped_2.webp" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 2">
     </div>
+    
+    <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <img src="assets/mt1.JPG" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 3">
+    </div>
+
+  </div>
+</div>
+
+<div class="main-content">
+    <h1>Welcome to my website!</h1>
+    <span>Hi, my name is Colin Alvis. This is my personal website. Feel free to explore, learn more by clicking a link below, and please, <a href="mailto:alvis.patrick@yahoo.com?subject=[Website%20Inquiry]%20-%20Your%20Subject%20Here">get in touch</a> if you have any questions. <strong>Just so you know: </strong>this website is a work in progress. More content <i>and</i> mobile-friendly design is in the works.</span>
+    <span>Thanks!</span>
+    <img src="assets/sig-2.png" style="height: 100px;"
+</div>
+
+<div class="links-box">
+    <button class="btns" onclick="document.location.href = 'about.html'">About Me</button>
+    <button class="btns" onclick="document.location.href = 'assets/resume.pdf'">View My Resume</button>
+</div>
+
     <div class="banner bottom-banner">
         <span class="bottom-banner-text">Copyright &#169; 2026 by Colin Alvis | Hosted with <a href="https://pages.github.com">GitHub Pages</a></span>
     </div>
+    <script src="scripts.js"></script>
+    <script src="imageGallery.js"></script>
 </body>
 </html>
