@@ -126,6 +126,12 @@ body {
   }
 }
 
+@media (max-width: 575px){
+  .home-img-link {
+    display: none;
+  }
+}
+
 .home-img {
   height: 90%;
   width: 100%;
