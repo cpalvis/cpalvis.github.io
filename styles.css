@@ -126,6 +126,12 @@ body {
   }
 }
 
+@media (max-width: 575px){
+  .home-img-link {
+    display: none;
+  }
+}
+
 .home-img {
   height: 90%;
   width: 100%;
@@ -219,10 +225,24 @@ body {
   height: 400px;
   object-fit: contain;
   border-radius: 30px;
+  margin: 10px;
 
 }
 
 .abt-head {
   text-align: center;
 
+}
+
+.caption {
+  color: white;
+  background-color: rgba(82, 82, 82, 0.699);
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  opacity: 0%;
+  transition: opacity 0.2s ease-in-out;
 }

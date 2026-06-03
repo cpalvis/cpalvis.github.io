@@ -10,7 +10,7 @@
 
     <!-- Bootstrap first -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="assets/init.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">   
 </head>
 <body>
 
@@ -18,20 +18,26 @@
   <div class="d-flex h-100">
     
     <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <span class="caption">Colin and Gracie Singer perform in the Oaks Theater performance of <i>Mary Poppins</i>.</span>
       <img src="assets/play/mp1.jpg" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 1">
     </div>
 
     <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+    <span class="caption">Colin delivers a speech at the 2025 Spokane GOP Lincoln Day.</span>
       <img src="assets/Colin_Cropped_2.webp" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 2">
     </div>
 
     <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <span class="caption">Colin as George Banks in <i>Mary Poppins</i>.</span>
       <img src="assets/play/mp2.jpg" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 1">
     </div>
     
     <div class="slide flex-shrink-0 w-100 h-100 position-relative overflow-hidden">
+      <span class="caption">Colin as an attorney on the Oaks 2025-2026 Mock Trial team.</span>
       <img src="assets/mt1.JPG" class="position-relative w-100 h-100 fg-main" alt="Gallery Image 3">
     </div>
+    <!--This positioning breaks the scroll. Idk why-->
+    <!--<button class="bi bi-arrow-right-circle" style="background: none; border: none;" id="arrowRight"></button>-->
 
   </div>
 </div>
@@ -40,12 +46,13 @@
     <h1>Welcome to my website!</h1>
     <span>Hi, my name is Colin Alvis. This is my personal website. Feel free to explore, learn more by clicking a link below, and please, <a href="mailto:alvis.patrick@yahoo.com?subject=[Website%20Inquiry]%20-%20Your%20Subject%20Here">get in touch</a> if you have any questions. <strong>Just so you know: </strong>this website is a work in progress. More content <i>and</i> mobile-friendly design is in the works.</span>
     <span>Thanks!</span>
-    <img src="assets/sig-2.png" style="height: 100px;"
+
+    <img src="assets/sig-2.png" style="height: 100px;">
 </div>
 
 <div class="links-box">
     <button class="btns" onclick="document.location.href = 'about.html'">About Me</button>
-    <button class="btns" onclick="document.location.href = 'assets/cpa-resume.pdf'">View My Resume</button>
+    <button class="btns" onclick="window.open('assets/cpa-resume.pdf', '_blank');">View My Resume</button>
 </div>
 
     <div class="banner bottom-banner">
