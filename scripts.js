@@ -6,4 +6,12 @@ function loadMenu(){
     document.body.insertBefore(menuFrame, document.body.firstChild);
 }
 
+function loadFavicon(){
+    const faviconLink = document.createElement('link');
+    faviconLink.rel = 'icon';
+    faviconLink.href = 'assets/init.png';
+    document.head.append(faviconLink);
+}
+
 window.onload = loadMenu()
+window.onload = loadFavicon();
