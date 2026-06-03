@@ -1,6 +1,7 @@
 const gallery = document.getElementById('autoGallery');
 const scrollSpeed = 8000; // Time per slide in milliseconds (8 seconds)
 let scrollInterval;
+const captions = document.getElementsByClassName('caption');
 
 function startAutoScroll() {
   scrollInterval = setInterval(() => {
@@ -27,3 +28,14 @@ startAutoScroll();
 // Smart UX Feature: Pause scrolling if a mobile user touches/swipes manually
 gallery.addEventListener('touchstart', stopAutoScroll);
 gallery.addEventListener('touchend', startAutoScroll);
+
+gallery.addEventListener('mouseover', () => {
+  for (const caption of captions){
+    caption.setAttribute("style", "opacity: 100%;")
+  }
+})
+gallery.addEventListener('mouseout', () => {
+  for (const caption of captions){
+    caption.setAttribute("style", "opacity: 0%;")
+  }
+})

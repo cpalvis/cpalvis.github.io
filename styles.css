@@ -236,4 +236,6 @@ body {
   bottom: 0;
   text-align: center;
   padding: 5px;
+  opacity: 0%;
+  transition: opacity 0.2s ease-in-out;
 }
