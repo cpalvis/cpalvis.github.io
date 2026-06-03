@@ -1,5 +1,5 @@
 const gallery = document.getElementById('autoGallery');
-const scrollSpeed = 5000; // Time per slide in milliseconds (3 seconds)
+const scrollSpeed = 8000; // Time per slide in milliseconds (8 seconds)
 let scrollInterval;
 
 function startAutoScroll() {
