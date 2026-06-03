@@ -226,3 +226,14 @@ body {
   text-align: center;
 
 }
+
+.caption {
+  color: white;
+  background-color: rgba(82, 82, 82, 0.699);
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+}
